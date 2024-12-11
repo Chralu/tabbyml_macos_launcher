@@ -1,6 +1,6 @@
 # TabbyML MacOS Launcher
 
-This is a simple MacOS launcher for TabbyML.
+This is a simple MacOS launcher for [TabbyML](https://github.com/TabbyML/tabby).
 
 It has been created thanks to the excellent [Platypus](https://github.com/sveinbjornt/Platypus) app.
 
