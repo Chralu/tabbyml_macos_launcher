@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  upload-asset:
+    name: Upload Asset to Release
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Zip the TabbyML.app folder
+      run: |
+        if [ -d "TabbyML.app" ]; then
+          zip -r TabbyML.zip TabbyML.app
+        else
+          echo "Directory TabbyML.app not found"
+          exit 1
+        fi
+
+    - name: Upload Zip to release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: ./TabbyML.zip
