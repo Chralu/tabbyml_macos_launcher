@@ -17,6 +17,6 @@ You need [`brew` installed `tabby`](https://tabby.tabbyml.com/docs/quick-start/i
 
 ## How to install
 
-Go to the latest release and download `TabbyML.zip`.
+Download [the latest `TabbyML.zip` release](https://github.com/Chralu/tabbyml_macos_launcher/releases/latest/download/TabbyML.zip).
 
 Unzip it and copy `TabbyML` in `/Applications`.
